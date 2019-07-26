@@ -1,0 +1,134 @@
+
+/* Imports
+-------------------------------------------------- */
+@import 'config/config-door-size';
+@import 'config/config-mixins';
+
+html {
+  min-height: 100%;
+  cursor: default;
+}
+
+html,
+body {
+  color: $color-one;
+  background-color: $color-default;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    //opacity: .5;
+    //text-decoration: underline;
+  }
+}
+
+
+.flex {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+header,
+main {
+  background-color: white;
+  box-shadow: 0 0 $door-padding rgba(0, 0, 0, 0.5);
+
+  position: relative;
+}
+
+
+header { z-index:1 }
+main { z-index:2 }
+
+
+.logo {
+  mix-blend-mode: overlay;
+}
+
+header {
+  background-color: #bd00ff;
+
+  position: sticky;
+  top: 0;
+
+  height: 50vh;
+
+  overflow: hidden;
+
+
+  &.flex {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    div {
+
+      max-width: 1000px;
+      padding: $door-size $door-size*4;
+    }
+  }
+
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-attachment: unset;
+  background-position: 0%;
+
+  animation: clouds-moving infinite 40s;
+
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes clouds-moving {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+
+main {
+
+  min-height: 50vh;
+
+  .flex {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+
+    max-width: 1000px;
+
+    min-height: 50vh;
+
+    margin: 0 auto;
+    padding: $door-size $door-size 0;
+
+    //outline: 2px solid red;
+  }
+
+
+  .col {
+    width: 50%;
+    text-align: center;
+  }
+}
