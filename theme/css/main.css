@@ -2151,10 +2151,10 @@ header {
   min-height: 200px;
   overflow: hidden;
   background-image: url("../img/background.jpg");
-  background-size: cover;
+  background-size: 120%;
   background-attachment: unset;
   background-position: 0%;
-  animation: clouds-moving infinite 40s;
+  animation: clouds-moving infinite 30s;
   animation-fill-mode: forwards;
   animation-play-state: running;
   animation-timing-function: ease-in-out; }
