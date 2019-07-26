@@ -2151,7 +2151,7 @@ header {
   min-height: 200px;
   overflow: hidden;
   background-image: url("../img/background.jpg");
-  background-size: 120%;
+  background-size: cover;
   background-attachment: unset;
   background-position: 0%;
   animation: clouds-moving infinite 30s;
