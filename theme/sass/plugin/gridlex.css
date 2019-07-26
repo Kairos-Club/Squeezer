@@ -121,13 +121,13 @@ div.logo {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
-  margin: 0 -0.80625vw; }
+  margin: 0 -6.25px; }
 
 .col,
 [class*="col-"] {
   box-sizing: border-box;
   flex: 0 0 auto;
-  padding: 0 0.80625vw 0; }
+  padding: 0 6.25px 0; }
 
 .col {
   flex: 1 1 0%; }

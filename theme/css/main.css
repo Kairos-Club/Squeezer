@@ -1204,64 +1204,65 @@ div.logo {
 /* Font Size
 -------------------------------------------------- */
 html {
-  font-size: 2.6875vw;
-  line-height: 3.225vw; }
+  font-size: 20.8333333333px;
+  line-height: 25px; }
 
 /* Headings
 -------------------------------------------------- */
 h1 {
-  font-size: 4.03125vw; }
+  font-size: 31.25px; }
 
 h2 {
-  font-size: 4.03125vw; }
+  font-size: 31.25px; }
 
 h3 {
-  font-size: 4.03125vw; }
+  font-size: 31.25px; }
 
 h1 {
-  line-height: 4.8375vw; }
+  line-height: 37.5px; }
 
 h2, h3 {
-  line-height: 4.8375vw; }
+  line-height: 37.5px; }
 
 h4, h5, h6 {
-  font-size: 2.41875vw; }
+  font-size: 18.75px; }
 
 h4, h5, h6 {
-  line-height: 3.225vw; }
+  line-height: 25px; }
 
 /* ---------- Custom Le Portique ---------- */
 /* Code
 -------------------------------------------------- */
 code, kbd, samp, pre, tt, var {
-  font-size: 2.15vw; }
+  font-size: 16.6666666667px; }
 
 /* Global
 -------------------------------------------------- */
 p {
-  margin-bottom: 3.225vw; }
+  margin-bottom: 25px;
+  line-height: 25px; }
 
 blockquote {
-  padding: 3.225vw;
-  margin-bottom: 3.225vw; }
+  padding: 25px;
+  margin-bottom: 25px; }
 
 blockquote p {
   margin-bottom: 0; }
 
 code, kbd, samp, pre, tt, var,
 mark, abbr {
-  padding: 2px 0.80625vw; }
+  padding: 2px 6.25px; }
 
 hr {
-  height: 0.24vw;
-  margin-top: -0.24vw;
-  margin-bottom: 1.6125vw; }
+  height: 2px;
+  margin-top: -2px;
+  margin-bottom: 12.5px; }
 
 ol, ul, dl {
-  margin-bottom: 3.225vw; }
+  margin-bottom: 25px; }
 
 ol, ul, dl, dd {
-  margin-left: 3.225vw; }
+  margin-left: 25px; }
 
 form ol,
 form ul,
@@ -1276,7 +1277,7 @@ a {
 ins {
   border: none;
   text-decoration: none !important;
-  border-bottom: 0.24vw solid !important; }
+  border-bottom: 2px solid !important; }
 
 abbr {
   border: none !important;
@@ -1290,7 +1291,7 @@ img {
   line-height: 0; }
 
 .fd-demo img {
-  padding: 3.225vw; }
+  padding: 25px; }
 
 /* Buttons
 -------------------------------------------------- */
@@ -1303,7 +1304,7 @@ input[type="button"] {
   white-space: nowrap;
   width: auto;
   max-width: inherit;
-  padding: 1.6125vw;
+  padding: 12.5px;
   border: none;
   box-shadow: none;
   appearance: none;
@@ -1323,9 +1324,9 @@ select {
   vertical-align: top;
   width: 100%;
   max-width: 100%;
-  min-height: 6.45vw;
-  padding: 1.3725vw;
-  border: 0.24vw solid;
+  min-height: 50px;
+  padding: 10.5px;
+  border: 2px solid;
   outline: 0;
   box-shadow: none;
   appearance: none;
@@ -1355,8 +1356,8 @@ select:focus {
 
 form label {
   display: inline-block;
-  padding-top: 1.6125vw;
-  padding-bottom: 1.6125vw; }
+  padding-top: 12.5px;
+  padding-bottom: 12.5px; }
 
 form label:hover {
   cursor: pointer; }
@@ -1364,11 +1365,11 @@ form label:hover {
 fieldset {
   width: 100%;
   position: relative;
-  padding: 1.6125vw;
-  margin-bottom: 3.225vw;
+  padding: 12.5px;
+  margin-bottom: 25px;
   border-width: 0;
-  outline: 0.24vw solid;
-  outline-offset: -0.24vw; }
+  outline: 2px solid;
+  outline-offset: -2px; }
 
 fieldset legend {
   width: 100%;
@@ -1383,10 +1384,10 @@ fieldset fieldset fieldset {
 /* Select
 -------------------------------------------------- */
 select {
-  padding-right: 4.8375vw;
+  padding-right: 37.5px;
   text-overflow: ellipsis;
-  background: no-repeat local center right 1.6125vw;
-  background-size: 1.6125vw 6.45vw; }
+  background: no-repeat local center right 12.5px;
+  background-size: 12.5px 50px; }
 
 /* FF HACK :( */
 @-moz-document url-prefix() {
@@ -1394,11 +1395,11 @@ select {
     padding-bottom: 0 !important; } }
 
 select[multiple] {
-  padding-right: 1.6125vw; }
+  padding-right: 12.5px; }
 
 select[multiple] optgroup option {
-  padding-left: 1.6125vw;
-  padding-right: 1.6125vw; }
+  padding-left: 12.5px;
+  padding-right: 12.5px; }
 
 /* Radio / Checkbox
 -------------------------------------------------- */
@@ -1409,8 +1410,8 @@ input[type="checkbox"] {
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   position: relative;
-  padding-left: 6.45vw;
-  padding-right: 1.6125vw; }
+  padding-left: 50px;
+  padding-right: 12.5px; }
 
 input[type="radio"] + label::before,
 input[type="checkbox"] + label::before {
@@ -1419,8 +1420,8 @@ input[type="checkbox"] + label::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 6.45vw;
-  height: 6.45vw; }
+  width: 50px;
+  height: 50px; }
 
 input[type="radio"] + label::after,
 input[type="checkbox"] + label::after {
@@ -1428,31 +1429,31 @@ input[type="checkbox"] + label::after {
   display: block;
   position: absolute;
   text-align: center;
-  top: 1.6125vw;
-  left: 1.6125vw;
+  top: 12.5px;
+  left: 12.5px;
   transform: scale(1);
-  width: 3.225vw;
-  height: 3.225vw;
-  border: 0.48vw solid;
+  width: 25px;
+  height: 25px;
+  border: 4px solid;
   background-clip: border-box !important; }
 
 input[type="radio"] + label::after {
-  -webkit-border-radius: 3.225vw;
-  -moz-border-radius: 3.225vw;
-  border-radius: 3.225vw;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
 input[type="checkbox"] + label::after {
-  -webkit-border-radius: 3.225vw;
-  -moz-border-radius: 3.225vw;
-  border-radius: 3.225vw;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
 input[type="radio"]:checked + label::after,
 input[type="checkbox"]:checked + label::after {
-  border: 1.6125vw solid; }
+  border: 12.5px solid; }
 
 /* Input file
 -------------------------------------------------- */
@@ -1470,9 +1471,9 @@ input[type="checkbox"]:checked + label::after {
 /* Tables
 -------------------------------------------------- */
 table {
-  outline: 0.24vw solid;
-  outline-offset: -0.24vw;
-  margin-bottom: 3.225vw;
+  outline: 2px solid;
+  outline-offset: -2px;
+  margin-bottom: 25px;
   display: inline-block;
   width: auto;
   max-width: 100%;
@@ -1480,57 +1481,57 @@ table {
 
 th,
 td {
-  padding: 1.6125vw 1.6125vw 1.3725vw 1.6125vw;
-  border-bottom: 0.24vw solid;
-  border-right: 0.24vw solid; }
+  padding: 12.5px 12.5px 10.5px 12.5px;
+  border-bottom: 2px solid;
+  border-right: 2px solid; }
 
 /* Input Range
 -------------------------------------------------- */
 /* Range Track */
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 0.48vw;
-  border-radius: 0.48vw;
+  height: 4px;
+  border-radius: 4px;
   cursor: pointer;
   border: none; }
 
 input[type=range]::-moz-range-track {
   width: 100%;
-  height: 0.48vw;
-  border-radius: 0.48vw;
+  height: 4px;
+  border-radius: 4px;
   cursor: pointer;
   border: none; }
 
 /* Range Thumb */
 input[type=range]::-webkit-slider-thumb {
   border: none;
-  width: 3.225vw;
-  height: 3.225vw;
-  margin-top: -1.3725vw;
-  border-radius: 3.225vw;
+  width: 25px;
+  height: 25px;
+  margin-top: -10.5px;
+  border-radius: 25px;
   cursor: pointer;
   -webkit-appearance: none; }
 
 input[type=range]::-moz-range-thumb {
   border: none;
-  width: 3.225vw;
-  height: 3.225vw;
-  margin-top: -1.3725vw;
-  border-radius: 3.225vw;
+  width: 25px;
+  height: 25px;
+  margin-top: -10.5px;
+  border-radius: 25px;
   cursor: pointer;
   -webkit-appearance: none; }
 
 /* Grid
 -------------------------------------------------- */
 [class*='grid'] {
-  width: -webkit-calc(100% + 1.6125vw);
-  width: -moz-calc(100% + 1.6125vw);
-  width: calc(100% + 1.6125vw);
-  margin-left: -0.80625vw; }
+  width: -webkit-calc(100% + 12.5px);
+  width: -moz-calc(100% + 12.5px);
+  width: calc(100% + 12.5px);
+  margin-left: -6.25px; }
 
 [class*='col-'] {
-  padding-left: 0.80625vw;
-  padding-right: 0.80625vw; }
+  padding-left: 6.25px;
+  padding-right: 6.25px; }
 
 /* Imports
 -------------------------------------------------- */
@@ -1995,75 +1996,6 @@ div.logo {
 
 /* DEV */
 /* - - - - - - - - - - - - - - - - - - - - - - - - */
-/* Imports
--------------------------------------------------- */
-/* DOOR SIZE */
-/* - - - - - - - - - - - - - - - - - - - - - - - - */
-/* DEV COLOR */
-/* - - - - - - - - - - - - - - - - - - - - - - - - */
-/* - - - - - - - - - - - - - - - - - - - - - - - - */
-/* Dev Tool & Baseline
--------------------------------------------------- */
-* {
-  outline: 1px solid rgba(0, 0, 255, 0.15);
-  outline-offset: -1px; }
-
-.fd-dev {
-  color: rgba(0, 0, 255, 0.15);
-  background-color: rgba(255, 0, 0, 0.15);
-  display: inline-block;
-  padding: 0 8px;
-  position: absolute;
-  border-radius: 0 0 0 2px;
-  top: 1px;
-  right: 1px;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: lowercase; }
-
-.fd-dev-baseline {
-  pointer-events: none;
-  display: inline-block;
-  position: fixed;
-  z-index: 9999999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 3.225vw 3.225vw;
-  background-position: top left;
-  background-repeat: repeat;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAK5JREFUeNrs0bENACAQA7E8Yv+Vg9iBgsJXZIB4kjT6pn2n7bjij5YLgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAgIEAEBIiBABASIgAAREAEBIiBA9LwjwAAfIwTHKvKmkwAAAABJRU5ErkJggg==");
-  opacity: 0.9; }
-
-/* Layout
--------------------------------------------------- */
-.fd-dev, span,
-strong, b, em, i, u, code, pre {
-  outline: none; }
-
-.fd-layout, .fd-layout-body,
-.fd-layout-nav, .fd-nav-header, .fd-nav-content, .fd-nav-footer,
-.fd-layout-main, .fd-main-header, .fd-main-content, .fd-main-footer {
-  outline: 2px solid rgba(255, 0, 0, 0.15);
-  outline-offset: -1px; }
-
-/* Grid
--------------------------------------------------- */
-[class*='grid'].fd-demo {
-  outline: 1px solid rgba(0, 0, 255, 0.15);
-  outline-offset: -1px; }
-
-.fd-demo > [class*='col-'] {
-  outline: 1px solid rgba(255, 0, 0, 0.15);
-  outline-offset: -1px; }
-
-/* Custom
--------------------------------------------------- */
-.social-link {
-  background-color: rgba(0, 255, 0, 0.3); }
-
 /*! PLUGIN */
 /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Style */
@@ -2144,11 +2076,25 @@ html {
 
 html,
 body {
-  color: black;
-  background-color: white; }
+  color: white;
+  background-color: black; }
+
+h1, h2 {
+  margin-bottom: 25px;
+  font-weight: 100; }
+
+p {
+  font-weight: 100; }
 
 a {
   text-decoration: none; }
+
+:link, :visited {
+  color: white; }
+
+a:hover, a:focus {
+  color: #454dff;
+  font-weight: 400; }
 
 .flex {
   display: flex;
@@ -2157,10 +2103,21 @@ a {
   justify-content: left;
   align-items: flex-start; }
 
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-end;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 2; }
+
 header,
 main {
-  background-color: white;
-  box-shadow: 0 0 1.6125vw rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.5);
   position: relative; }
 
 header {
@@ -2172,11 +2129,26 @@ main {
 .logo {
   mix-blend-mode: overlay; }
 
+.social-links {
+  mix-blend-mode: overlay;
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 9;
+  padding: 0; }
+  .social-links a {
+    display: inline-block;
+    min-width: 25px;
+    text-align: center; }
+
 header {
   background-color: #bd00ff;
   position: sticky;
   top: 0;
-  height: 50vh;
+  width: 100%;
+  height: 40vh;
+  min-height: 200px;
   overflow: hidden;
   background-image: url("../img/background.jpg");
   background-size: cover;
@@ -2194,7 +2166,7 @@ header {
     align-items: center; }
     header.flex div {
       max-width: 1000px;
-      padding: 3.225vw 12.9vw; }
+      padding: 25px 100px; }
 
 @keyframes clouds-moving {
   0% {
@@ -2205,17 +2177,25 @@ header {
     background-position: 0%; } }
 
 main {
-  min-height: 50vh; }
+  height: auto;
+  min-height: 60vh; }
   main .flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
-    align-items: center;
-    max-width: 1000px;
-    min-height: 50vh;
+    align-items: flex-start;
+    max-width: 1280px;
+    min-height: auto;
     margin: 0 auto;
-    padding: 3.225vw 3.225vw 0; }
+    padding: 25px 25px 0; }
   main .col {
     width: 50%;
-    text-align: center; }
+    padding: 0 25px; }
+
+small {
+  font-size: 70%; }
+
+@media all and (max-width: 980px) {
+  main .col {
+    width: 100%; } }
