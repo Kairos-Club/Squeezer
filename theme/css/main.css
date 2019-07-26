@@ -2200,4 +2200,4 @@ small {
 @media all and (max-width: 980px) {
   main .col {
     width: 100%;
-    padding: 0 75px 0 25px; } }
+    padding: 0 75px 25px 25px; } }

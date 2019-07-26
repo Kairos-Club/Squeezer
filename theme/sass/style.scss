@@ -202,7 +202,7 @@ small {
   main {
     .col {
       width: 100%;
-      padding: 0 $door-size*3 0 $door-size;
+      padding: 0 $door-size*3 $door-size $door-size;
     }
   }
 }
