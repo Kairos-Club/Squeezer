@@ -2130,20 +2130,20 @@ main {
   mix-blend-mode: overlay; }
 
 .social-links {
-  mix-blend-mode: overlay;
   display: block;
   position: fixed;
-  top: 25px;
+  bottom: 25px;
   right: 25px;
   z-index: 9;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .social-links a {
     display: inline-block;
     min-width: 25px;
     text-align: center; }
 
 header {
-  background-color: #bd00ff;
+  background-color: black;
   position: sticky;
   top: 0;
   width: 100%;
@@ -2165,8 +2165,8 @@ header {
     justify-content: center;
     align-items: center; }
     header.flex div {
-      max-width: 1000px;
-      padding: 25px 100px; }
+      max-width: 700px;
+      padding: 25px; }
 
 @keyframes clouds-moving {
   0% {
@@ -2188,7 +2188,7 @@ main {
     max-width: 1280px;
     min-height: auto;
     margin: 0 auto;
-    padding: 25px 25px 0; }
+    padding: 25px 0 0; }
   main .col {
     width: 50%;
     padding: 0 25px; }
@@ -2198,4 +2198,5 @@ small {
 
 @media all and (max-width: 980px) {
   main .col {
-    width: 100%; } }
+    width: 100%;
+    padding: 0 75px 0 25px; } }

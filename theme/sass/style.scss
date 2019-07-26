@@ -76,7 +76,6 @@ main {
   position: relative;
 }
 
-
 header { z-index:1 }
 main { z-index:2 }
 
@@ -86,11 +85,11 @@ main { z-index:2 }
 }
 
 .social-links {
-  mix-blend-mode: overlay;
+  //mix-blend-mode: overlay;
 
   display: block;
   position: fixed;
-  top: $door-size;
+  bottom: $door-size;
   right: $door-size;
 
   a {
@@ -101,10 +100,11 @@ main { z-index:2 }
 
   z-index: 9;
   padding: 0;
+  margin: 0;
 }
 
 header {
-  background-color: #$color-one;
+  background-color: $color-one;
 
   position: sticky;
   top: 0;
@@ -126,8 +126,8 @@ header {
 
     div {
 
-      max-width: 1000px;
-      padding: $door-size $door-size*4;
+      max-width: 700px;
+      padding: $door-size;
     }
   }
 
@@ -176,7 +176,7 @@ main {
     min-height: auto;
 
     margin: 0 auto;
-    padding: $door-size $door-size 0;
+    padding: $door-size 0 0;
 
     //outline: 2px solid red;
   }
@@ -200,6 +200,7 @@ small {
   main {
     .col {
       width: 100%;
+      padding: 0 $door-size*3 0 $door-size;
     }
   }
 }
