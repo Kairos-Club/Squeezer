@@ -2189,7 +2189,7 @@ main {
     max-width: 1280px;
     min-height: auto;
     margin: 0 auto;
-    padding: 25px 0 0; }
+    padding: 25px 0 90px; }
   main .col {
     width: 50%;
     padding: 0 25px; }
@@ -2201,3 +2201,42 @@ small {
   main .col {
     width: 100%;
     padding: 0 75px 25px 25px; } }
+
+.pastille-2020 {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  bottom: -80px;
+  left: -80px;
+  border-radius: 0 45px 0 0;
+  overflow: hidden;
+  z-index: 9997;
+  filter: drop-shadow(0px 0px 1px #b29d6b);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  animation: open-pastille .4s ease-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards; }
+  .pastille-2020 img {
+    width: 100%;
+    height: 100%;
+    animation: rotating-pastille 4s linear infinite reverse; }
+  .pastille-2020:hover {
+    filter: drop-shadow(0px 0px 0px rgba(178, 157, 107, 0));
+    bottom: -20px;
+    left: -20px; }
+
+@keyframes open-pastille {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes rotating-pastille {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
