@@ -57,51 +57,51 @@ You will find that we listen closely to our clients' needs and offer high qualit
 
         <div class="flex">
             <div class="col">
-
-                <h2>Mutation</h2>
-
+                <h2>
+                    Mutation
+                </h2>
                 <p>
                     Les besoins des labels et artistes sont en constante évolution.
                     Afin d’y répondre le plus efficacement possible, nous travaillons sur
                     la création et la mise en place d’outils sur la nouvelle version de Squeezer.fr
                     qui sera mise en ligne début 2020.
                 </p>
-
-                <p>Nos activités sont toujours en cours, n’hésitez pas à nous contacter pour toute demande de devis ou
-                    requête.</p>
+                <p>
+                    Nos activités sont toujours en cours, n’hésitez pas à nous contacter pour toute demande de devis ou requête.
+                </p>
                 <p>
                     À très vite !<br>
                     <em>
                         <small>L’équipe SQUEEZER</small>
                     </em>
                 </p>
-
             </div>
 
             <div class="col">
-
                 <h2>
                     Contacts & devis
                 </h2>
                 <p>
                     <a href="mailto:office@squeezer.fr">office@squeezer.fr</a><br>
-                    +33.(0)9.50.14.23.28
                 </p>
-
                 <p>
                     59 rue Jean-Pierre Timbaud<br>
                     75011 Paris - France
                 </p>
-
-                <h2>Délais *</h2>
-
+                <h2>
+                    Délais *
+                </h2>
                 <p>
                     – <i class="fas fa-dot-circle"></i> Vinyle avec test-pressings = 8 semaines<br>
                     – <i class="fas fa-dot-circle"></i> Vinyle sans test-pressings = 4 semaines<br>
                     – <i class="far fa-dot-circle"></i> CD = 12 jours ouvrés
                 </p>
-
-                <p><small>* <em>valable uniquement sur les produits standards</em></small></p>
+                <p>
+                    <small>* <em>valable uniquement sur les produits standards</em></small>
+                </p>
+                <p>
+                    <a href="#" data-a11y-dialog-show="my-accessible-dialog" title="COVID-19 🦠">🦠</a>
+                </p>
 
             </div>
         </div>
@@ -120,5 +120,55 @@ You will find that we listen closely to our clients' needs and offer high qualit
 </a>-->
 
 <div class="fd-dev-baseline"></div>
+
+<div class="dialog" id="my-accessible-dialog">
+    <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+    <dialog class="dialog-content" aria-labelledby="dialogTitle" aria-describedby="dialogDescription">
+        <button data-a11y-dialog-hide class="dialog-close button-light" aria-label="Close this dialog window">&times;</button>
+
+        <h1 id="dialog-title">
+            COVID-19 🦠
+        </h1>
+        <p>
+            Malgré une situation inédite en Europe, SQUEEZER est en capacité d’assurer une continuité totale des projets en cours et futurs.
+        </p>
+        <p>
+            À ce jour, le site de production Optimal Media avec lequel nous travaillons est opérationnel et les mesures prises en Allemagne permettent de continuer toutes activités industrielles jusqu’à nouvel ordre.
+        </p>
+        <p>
+            Pour nous permettre une fluidité dans le suivi de vos prochaines fabrications, nous vous invitons fortement à reconsidérer votre planning de sorties afin d’éviter tout engorgement quand la reprise sera effective. Prenez de l’avance sur l’envoi de vos éléments afin de pouvoir vous positionner dans une éventuelle file d’attente.
+        </p>
+        <p>
+            Nous restons disponibles à tout moment par email pour toute demande de devis, conseil ou discussion sur vos projets actuels et futurs.
+        </p>
+        <p>
+            Prenez soin de vous et votre entourage.
+        </p>
+        <p>
+            <em>
+                <small>L’équipe SQUEEZER</small>
+            </em>
+        </p>
+    </dialog>
+</div>
+
+<script src="theme/js/main.min.js"></script>
+
+<script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var dialogEl = document.getElementById('my-accessible-dialog');
+            var mainEl = document.getElementById('main');
+            var dialog = new window.A11yDialog(dialogEl, mainEl);
+
+            dialog.on('show', function (dialogEl, triggerEl) {
+                console.log(dialogEl);
+                console.log(triggerEl);
+            });
+            dialog.show()
+        });
+    }());
+</script>
+
 </body>
 </html>

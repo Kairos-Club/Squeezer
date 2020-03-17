@@ -16,7 +16,7 @@ html {
 }
 
 a:hover, a:focus {
-  color: $color-tree;
+  color: $color-two;
 }
 
 /* Required Color
@@ -56,14 +56,14 @@ input[type="submit"]:hover, input[type="submit"]:focus,
 input[type="reset"]:hover, input[type="reset"]:focus,
 input[type="button"]:hover, input[type="button"]:focus,
 .inputfile:focus + label, .inputfile + label:hover{
-  color: $color-tree;
+  color: $color-two;
   background-color: $color-one;
 }
 
 .button-light,
 .button-light:hover,
 .button-light:focus {
-  color: $color-one !important;
+  color: $color-default !important;
   background-color: transparent !important;
 }
 
@@ -75,7 +75,7 @@ input[type="button"]:hover, input[type="button"]:focus,
 .button-hard,
 .button-hard:hover,
 .button-hard:focus {
-  color: $color-tree !important;
+  color: $color-two !important;
   background-color: $color-one !important;
 }
 

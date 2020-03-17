@@ -1583,7 +1583,7 @@ html {
   color: black; }
 
 a:hover, a:focus {
-  color: #FF0000; }
+  color: blue; }
 
 /* Required Color
 -------------------------------------------------- */
@@ -1621,13 +1621,13 @@ input[type="submit"]:hover, input[type="submit"]:focus,
 input[type="reset"]:hover, input[type="reset"]:focus,
 input[type="button"]:hover, input[type="button"]:focus,
 .inputfile:focus + label, .inputfile + label:hover {
-  color: #FF0000;
+  color: blue;
   background-color: black; }
 
 .button-light,
 .button-light:hover,
 .button-light:focus {
-  color: black !important;
+  color: white !important;
   background-color: transparent !important; }
 
 .button-light:hover,
@@ -1637,7 +1637,7 @@ input[type="button"]:hover, input[type="button"]:focus,
 .button-hard,
 .button-hard:hover,
 .button-hard:focus {
-  color: #FF0000 !important;
+  color: blue !important;
   background-color: black !important; }
 
 .button-hard:hover,
@@ -2240,3 +2240,78 @@ small {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+/* -------------------------------------------------------------------------- *\
+ * Necessary styling for the dialog to work
+ * -------------------------------------------------------------------------- */
+/**
+ * When `<dialog>` is properly supported, the overlay is implied and can be
+ * styled with `::backdrop`, which means the DOM one should be removed.
+ */
+[data-a11y-dialog-native] .dialog-overlay {
+  display: none; }
+
+/**
+ * When `<dialog>` is not supported, its default display is `inline` which can
+ * cause layout issues.
+ */
+dialog[open] {
+  display: block; }
+
+.dialog[aria-hidden="true"] {
+  display: none; }
+
+.dialog {
+  position: absolute;
+  max-width: 100%;
+  width: 600px;
+  top: 0;
+  right: 0; }
+
+/* -------------------------------------------------------------------------- *\
+ * Styling to make the dialog look like a dialog
+ * -------------------------------------------------------------------------- */
+.dialog-overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.dialog-content {
+  z-index: 3;
+  position: relative;
+  top: 0; }
+
+/* -------------------------------------------------------------------------- *\
+ * Extra dialog styling to make it shiny
+ * -------------------------------------------------------------------------- */
+.dialog-content {
+  color: white;
+  background-color: #333333;
+  box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  max-width: 100%;
+  width: 600px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden; }
+
+.dialog-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer; }
